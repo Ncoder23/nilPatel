@@ -13,8 +13,8 @@ function Header() {
     ];
 
     return (
-        <header className="border-b border-dashed border-[--color-secondary] ">
-            <div className="container mx-auto flex items-start mt-10 mb-5">
+        <header className="mx-auto px-4 border-b border-dashed border-[--color-secondary] ">
+            <div className="container flex items-start mt-10 mb-5">
 
                 <nav className="flex items-start space-x-3 ">
                     {links.map(link => (

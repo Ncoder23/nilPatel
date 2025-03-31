@@ -8,14 +8,17 @@ import Experience from './components/Experience';
 import Projects from './components/Projects';
 import ThemeToggle from './components/ThemeToggle';
 
-
 function App() {
   return (
     <Router>
-      <div className="min-h-screen px-70" style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-text)' }}>
+      <div
+        className="min-h-screen"
+        style={{ backgroundColor: 'var(--color-background)', color: 'var(--color-text)' }}
+      >
         <ThemeToggle />
-        <Header />
-        <main className="container py-10">
+
+        <div className="mx-auto lg:w-1/2 sm:w-fit max-w-5xl px-4">
+          <Header />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
@@ -23,7 +26,8 @@ function App() {
             <Route path="/experience" element={<Experience />} />
             <Route path="/projects" element={<Projects />} />
           </Routes>
-        </main>
+        </div>
+
       </div>
     </Router>
   );
