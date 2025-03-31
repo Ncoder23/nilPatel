@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+:root {
+  /* Default theme (dark) */
+  --color-background: #1f242A;
+  --color-text: #adb5bd;
+  --color-headings: #74c0fc;
+  --color-links: #91A7FF;
+  --color-highlight: #41C7C7;
+  --color-bg-secondary: #323945;
+  --color-text-secondary: #9CA3AF;
+  --color-code-text: #91A7FF;
+  --color-share-text: #100c0c;
+}
+
+/* Apply theme colors */
+html {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Times New Roman', Times, serif;
+}
+
